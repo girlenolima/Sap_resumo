@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Tecnologias Web</title>
+    <link rel="stylesheet" type="text/css" href="style/styleSheet.css" />
+</head>
+
+<body>
+
+    <header>
+        <h1 id="titulo"><strong>Tecnologias Web</strong></h1>
+    </header>
+
+    <nav id="navegacao">
+        <a class="na" href="paginas/frontend.html">Front-End </a>
+        <a class="na" href="paginas/backend.html">Back-End </a>
+        <a class="na" href="paginas/servidor.html">Servidor </a>
+        <a class="na" href="paginas/bancodedados.html">Banco de Dados </a>
+        <a class="na" href="paginas/tabela.html">Referencias</a>
+
+    </nav>
+
+    <section id="conteudo"></section>
+
+
+
+    <footer>Dev web - Leno Lima</footer>
+
+    <script>
+        document.querySelectorAll('a').forEach(
+
+            link => {
+                const conteudo = document.getElementById('conteudo')
+
+                link.onclick = function (e) {
+                    e.preventDefault()
+
+                    fetch(link.href)
+                        .then(resp => resp.text())
+                        .then(html => conteudo.innerHTML = html)
+
+                }
+
+            }
+        )
+
+    </script>
+
+</body>
+
+</html>
