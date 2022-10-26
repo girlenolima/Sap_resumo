@@ -8,7 +8,7 @@
             <th>Tipo</th>
             <th>Exemplo</th>
             <th>Caminho na arvore de transaçoes</th>
-            
+
         </tr>
     </thead>
 
@@ -17,11 +17,11 @@
         <tr>
             <td>01</td>
             <td>Criar empresa</td>
-            <td><a href="#ec01">EC01</a></td>  
+            <td><a href="#ec01">EC01</a></td>
             <td>SPRO</td>
             <td></td>
             <td><a href="#ec01tree">Path</a></td>
-           
+
         </tr>
 
         <tr>
@@ -31,10 +31,31 @@
             <td>SPRO</td>
             <td></td>
             <td><a href="#spro01tree">Path</a></td>
-           
+
         </tr>
 
-        
+        <tr>
+            <td>03</td>
+            <td>Vincular sociedade empresa</td>
+            <td><a href="#spro02">SPRO</a></td>
+            <td>SPRO</td>
+            <td></td>
+            <td><a href="#spro02tree">Path</a></td>
+
+        </tr>
+
+        <tr>
+            <td>04</td>
+            <td>Atribuir empresa contabilidade de custo</td>
+            <td><a href="#spro03">SPRO</a></td>
+            <td>SPRO</td>
+            <td></td>
+            <td><a href="#spro03tree">Path</a></td>
+
+        </tr>
+
+
+
 
     </tbody>
 </table>
@@ -45,16 +66,16 @@
     <span>
 
         <p id="ec01tree">
-            Caminho ate a transaçao : Estrutura de empreendimento > contabilidade financeiro > definir, copiar ,
-            eliminar , verificar empresa.
+            Caminho até a transação : Estrutura de empreendimento > contabilidade financeiro >
+             definir, copiar, eliminar , verificar empresa.
         </p>
 
         <p>
         <ol>
-            <li>Fazer copia de uma empresa ja existente.</li>
-            <li> Voltar uma tela e clicar em processar.</li>
+            <li>Fazer cópia de uma empresa já existente.</li>
+            <li>Voltar uma tela e clicar em processar.</li>
             <li>Posicionar empresa, acessar empresa.</li>
-            <li>Mudar nome da empresa, local, pais, moeda e indioma.</li>
+            <li>Mudar nome da empresa, local, pais, moeda e idioma.</li>
             <li>Voltar duas telas.</li>
         </ol>
         </p>
@@ -65,11 +86,82 @@
 </div>
 
 <div>
-    <h1 id="spro01">Definir Sociedade</h1>
+    <h1 id="spro01">SPRO - Definir Sociedade</h1>
     <span>
+
+        <p>
+            Caminho até a transação : Estrutura de empreendimento > 
+            definição > contabilidade financeira > definir sociedade.
+        </p>
         <p id="spro01tree">
-            JavaScript é uma linguagem de programação interpretada estruturada, de script em alto nível com tipagem
-            dinâmica fraca e multiparadigma. 
+            Caso a unidade de negócio faça parte de um grupo de empresas, deve-se definir um grupo, uma sociedade. 
+            Logo após a definição da sociedade a empresa deve ser vinculada ao novo grupo.
+        </p>
+
+        <p>
+        <ol>
+            <li>Sociedade.</li>
+            <li>Nome da sociedade.</li>
+            <li>Rua.</li>
+            <li>Caixa Postal.</li>
+            <li>Codigo Postal.</li>
+            <li>Cidade.</li>
+            <li>Pais.</li>
+            <li>Moeda.</li>
+            <li>Salvar.</li>
+        </ol>
+
+        </p>
+    </span>
+</div>
+
+<div>
+    <h1 id="spro02">SPRO - Vincular sociedade a empresa</h1>
+    <span>
+
+        <p id="spro02tree">
+            Caminho ate a transaçao : Contabilidade financeira (nv) > configuraçoes globais da contabilidade
+            financeira(novo) > paramentros globais para empresa > verificar e completar parametros globais.
+        </p>
+
+        <p>
+        <ol>
+            <li>Clicar duas vezes na empresa.</li>
+            <li> Tela organizaçao de contabilidade.</li>
+            <li>Insira o numero da sociedade.</li>
+            <li>Salvar.</li>
+        </ol>
+        </p>
+
+
+
+    </span>
+</div>
+
+
+<div>
+    <h1 id="spro03">Atribuir empresa contabilidade de custo</h1>
+    <span>
+
+        <p>
+            Caminho ate a transaçao : Estrutura de empreendimento > atribuiçao > controlling > atribuir empresa - area de contabilidade de custo.
+        </p>
+        <p id="spro03tree">
+           Para ter acesso as funçoes de contabilidade de custo, a empresa deve ser atribuida a area de contabilidade de custo.
+        </p>
+
+        <p>
+        <ol>
+            <li>Janela direita</li>
+            <li>Selecionar linha com a area da cont. de custo 1000 (ACC100)</li>
+            <li>Janela esquerda</li>
+            <li>Clicar duas vezes em atribuiçao de empresa</li>
+            <li>Entradas novas</li>
+            <li>Inserir empresa</li>
+            <li>Enter</li>
+            <li>Salvar.</li>
+        </ol>
+
         </p>
     </span>
 </div>
