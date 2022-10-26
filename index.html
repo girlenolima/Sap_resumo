@@ -2,50 +2,67 @@
 <html lang="pt-BR">
 
 <head>
-    <meta charset="UTF-8">
     <title>SAP resumo</title>
+
     <link rel="stylesheet" type="text/css" href="style/styleSheet.css" />
+
+    <link rel="apple-touch-icon" sizes="180x180" href="icons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="icons/favicon-16x16.png">
+    <link rel="manifest" href="icons/site.webmanifest">
 </head>
 
 <body>
 
-    <header>
-        <h1 id="titulo">SAP ECC Resumo de configuraçoes FI CO (Beta 1.0 - Leno Lima )</h1>
-    </header>
-
-    <nav id="navegacao">
-        <a class="na" href="paginas/regrasDenegocio.html">Regras de negocio</a>
-        <a class="na" href="paginas/criarEmpresa.html">Criar empresa</a>
-     <!--  <a class="na" href="paginas/servidor.html">Servidor </a>
-        <a class="na" href="paginas/bancodedados.html">Banco de Dados </a>
-        <a class="na" href="paginas/tabela.html">Referencias</a>--> 
-
-    </nav>
-
-    <section id="conteudo"></section>
+    <div class="conteiner">
 
 
+        <header>
+            <div class="img-wrapper">
+                <img src="img/limao.jpg" alt="" >
+            </div>
+
+            <h1>SAP Resumo</h1>
+            <a> Passo a passo de como criar uma empresa </a>
+            <button>Criar</button>
+
+        </header>
+
+        <!-- <nav id="navegacao">
+            <a class="na" href="paginas/regrasDenegocio.html">Regras de negocio</a>
+            <a class="na" href="paginas/criarEmpresa.html">Criar empresa</a>
+
+               <a class="na" href="paginas/servidor.html">Servidor </a>
+                <a class="na" href="paginas/bancodedados.html">Banco de Dados </a>
+                <a class="na" href="paginas/tabela.html">Referencias</a>
+
+        </nav>
+
+        <section id="conteudo"></section>
 
 
-    <script>
-        document.querySelectorAll('a').forEach(
+        <script>
+            document.querySelectorAll('a').forEach(
 
-            link => {
-                const conteudo = document.getElementById('conteudo')
+                link => {
+                    const conteudo = document.getElementById('conteudo')
 
-                link.onclick = function (e) {
-                    e.preventDefault()
+                    link.onclick = function (e) {
+                        e.preventDefault()
 
-                    fetch(link.href)
-                        .then(resp => resp.text())
-                        .then(html => conteudo.innerHTML = html)
+                        fetch(link.href)
+                            .then(resp => resp.text())
+                            .then(html => conteudo.innerHTML = html)
+
+                    }
 
                 }
+            )
 
-            }
-        )
+        </script> -->
 
-    </script>
+
+    </div>
 
 </body>
 
