@@ -1,8 +1,8 @@
 # Resumo SAP FI
 Passo a passo de como criar um empresa
 
-## Icone
+## Icones
 :package: nova funcionalidade.
 :up:  atualizaçao.
-:beatle: correçao de bug.
+:beetle: correçao de bug.
 :checkered_flag: release.
